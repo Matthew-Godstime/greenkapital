@@ -1,0 +1,31 @@
+.nav>li>a {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: .8em;
+    letter-spacing: .02em;
+    text-transform: uppercase;
+    color: rgba(102, 102, 102, .85);
+    padding: 10px 0;
+    flex-wrap: wrap;
+}
+
+#logo img {
+    max-height: 75px;
+}
+
+.navbar-nav {
+    margin-left: 5vw;
+}
+
+.active {
+    color: black !important;
+}
+
+
+.login-item {
+    margin-left: auto;
+}
+
+/* .cart-item,.login-item {
+    font-weight: 700;
+} */

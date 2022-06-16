@@ -1,0 +1,47 @@
+<nav class="navbar navbar-expand-lg bg-light fixed-top">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a id="logo" class="navbar-brand" routerLink="/home-page"><img src="../../assets/images/Logo-PNG-C.webp"
+                alt=""></a>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <ul class="navbar-nav nav">
+                <li class="nav-item">
+                    <a class="navbar-brand" href="#"><i class="bi bi-search"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="navbar-brand" routerLink="/home-page" routerLinkActive="active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navbar-brand" routerLink="/about" routerLinkActive="active">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navbar-brand" routerLink="/services" routerLinkActive="active">SERVICES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navbar-brand" routerLink="/training" routerLinkActive="active">TRAINING</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navbar-brand" routerLink="/blog" routerLinkActive="active">BLOG</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navbar-brand" routerLink="/contact" routerLinkActive="active">CONTACT US</a>
+                </li>
+
+                <li class="nav-item login-item">
+                    <a routerLink="/login" routerLinkActive="active">LOGIN</a>
+                </li>
+                <li class="nav-item crat-item">
+                    <a routerLink="/cart" routerLinkActive="active">CART / {{amount | currency:'N'}} <i
+                            class="bi bi-bag" style="border-color: #39b54a; color: #39b54a;"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

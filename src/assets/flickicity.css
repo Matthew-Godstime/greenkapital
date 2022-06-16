@@ -1,0 +1,103 @@
+.main-carousel {
+    margin: 7% 0 3em 0;
+}
+
+.main-carousel-cell {
+    width: 100%;
+    height: 80vh;
+    margin-right: 10px;
+    /* center images in cells with flexbox */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/** Button and dots ---------------------*/
+/* big buttons, no circle */
+.flickity-prev-next-button {
+    width: 100px;
+    height: 100px;
+    background: transparent;
+}
+
+/* arrow color */
+.flickity-prev-next-button .arrow {
+    fill: white;
+}
+
+.flickity-prev-next-button.no-svg {
+    color: white;
+}
+
+.flickity-prev-next-button:hover {
+    background: transparent;
+}
+
+/* hide disabled button */
+.flickity-prev-next-button:disabled {
+    display: none;
+}
+
+/* position dots in gallery */
+.flickity-page-dots {
+    bottom: 0px;
+}
+
+/* white circles */
+.flickity-page-dots .dot {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    background: transparent;
+    border: 2px solid white;
+}
+
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+    background: white;
+}
+
+/** --------------------------------------------*/
+
+.carousel-msg {
+    position: absolute;
+}
+
+#text-1462603685 {
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+
+/*Flicker css rule */
+/* external css: flickity.css, fullscreen.css */
+
+.second-carousel .carousel {
+    margin-top: 2em;
+}
+
+.second-carousel .carousel-cell {
+    width: 25%;
+    height: 300px;
+    margin-right: 20px;
+    /* center images in cells with flexbox */
+    background-color: rgb(225, 224, 224);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel.is-fullscreen .carousel-cell {
+    height: 100%;
+}
+
+.carousel-cell-image {
+    display: block;
+    max-height: 100%;
+}
+
+.carousel.is-fullscreen .carousel-cell-image {
+    max-width: 100%;
+}
