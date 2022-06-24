@@ -1,4 +1,4 @@
-<div class="main-carousel">
+<!-- <div class="main-carousel">
     <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": true }'>
         <div class="carousel-cell main-carousel-cell">
             <div class="carousel-msg">
@@ -13,7 +13,35 @@
         </div>
         <div class="carousel-cell main-carousel-cell"><img src="../../assets/images/1-1024x683-1.jpg" class="d-block w-100" alt="..."></div>
     </div>
-</div>
+</div> -->
+
+
+<!-- <div class="container mt-5 text-center">
+    <h3 class="mb-5">Angular Image Crop Example</h3>
+    <div class="col-md-12">
+        <input type="file" (change)="onFileChange($event)" />
+    </div>
+    <div class="col-md-8">
+        <image-cropper [imageChangedEvent]="imgChangeEvt" [maintainAspectRatio]="true" [aspectRatio]="4 / 4"
+            [resizeToWidth]="256" format="png" (imageCropped)="cropImg($event)" (imageLoaded)="imgLoad()"
+            (cropperReady)="initCropper()" (loadImageFailed)="imgFailed()">
+        </image-cropper>
+    </div>
+    <div class="col-md-4">
+        <h6>Image Preview</h6>
+        <img [src]="cropImgPreview" />
+    </div>
+</div> -->
+
+
+<swiper [config]="config">
+    <div class="swiper-wrapper">
+        <img class="swiper-slide" *ngFor="let img of Images" [src]="img.src" [alt]="img.alt" />
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</swiper>
 
 <h3 class="section-title-center section-title">
     <b></b>
@@ -21,18 +49,8 @@
     <b></b>
 </h3>
 
-<!-- Flickity HTML init -->
-<div class="second-carousel">
-    <div class="carousel" data-flickity='{ "freeScroll": true, "wrapAround": true, "groupCells": true, "autoPlay": true }'>
-        <div class="carousel-cell"><img src="../../assets/images/R-64.webp" alt=""></div>
-        <div class="carousel-cell"><img src="../../assets/images/inverter.webp" alt=""></div>
-        <div class="carousel-cell"><img src="../../assets/images/batteries.webp" alt=""></div>
-        <div class="carousel-cell"><img src="../../assets/images/61a2c8d2bf422988703daac42785e13d_medium.jpg" alt=""></div>
-        <div class="carousel-cell"><img src="../../assets/images/R-2022-02-14T072435.056.webp" alt=""></div>
-        <div class="carousel-cell"><img src="../../assets/images/R-2022-03-04T003322.388.webp" alt=""></div>
-        <div class="carousel-cell"><img src="../../assets/images/20w-solar-light-1.webp" alt=""></div>
-        <div class="carousel-cell"><img src="../../assets/images/R-2022-02-14T072435.056.webp" alt=""></div>
-    </div>
+<div class="group-slider">
+    <ng-image-slider  [infinite]="true" [autoSlide]="true" [images]="imgCollection" #nav></ng-image-slider>
 </div>
 
 <div class="container section-title-container" style="margin-top:41px;margin-bottom:21px;">
