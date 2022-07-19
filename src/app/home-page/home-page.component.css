@@ -19,11 +19,13 @@
 #text-1462603685 {
     color: rgb(255, 255, 255);
 }
+
 b,
 strong {
     font-weight: bolder;
     font-weight: bold;
 }
+
 .section-title {
     position: relative;
     -js-display: flex;

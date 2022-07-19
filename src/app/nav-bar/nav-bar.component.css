@@ -29,3 +29,9 @@
 /* .cart-item,.login-item {
     font-weight: 700;
 } */
+
+/* a:active .offcanvas {
+    width: 0;
+}
+
+a {width: 100%; transition: all ease-in-out 3s;} */
